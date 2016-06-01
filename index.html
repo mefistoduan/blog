@@ -29,7 +29,32 @@
     <div class="container">
       <section id="main_content">
         <h3>
-<a id="first-line-for-my-blog" class="anchor" href="#first-line-for-my-blog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>first line for my blog</h3>
+<a id="first-line-for-my-blog" class="anchor" href="#first-line-for-my-blog" aria-hidden="true">
+  <span aria-hidden="true" class="octicon octicon-link"></span></a>first line for my blog</h3>
+        <span>2016-06-01</span>
+        <h5>js递进判断</h5>
+        <p>
+          addName==''?alert('姓名不能为空'):addTel==''?alert('电话不能为空'):!/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}/g.test(addTel)==true?alert('电话号码不正确'):addAddress==''?alert('地址不能为空'):addPro==''?alert('省份不能为空'):addCity==''?alert('城市不能为空'):addCounty==''?alert('详细地址不能为空'):addfunction();
+        </p>
+        <s>最后的function是可以在外部单独封装的，也可以做其他处理，为了视觉上的优美，尽量还是都分开单独封装。</s>
+        <br>
+        <br>
+        <h5>jq 定时侦测页面</h5>
+        <p>
+          $(function(){
+          setInterval(function(){
+          var thisID = $('#see').val();
+          console.log(thisID);
+          $('p').html(thisID);
+          },300);
+          $('span').hover(function(){
+          $(this).css('color','red');
+          },function(){
+          $(this).css('color','#333333');
+          })
+          })
+        </p>
+        <s>很笨拙的方法，但是对与低版本浏览器不能双向数据绑定的时候，能用的方法就是好方法</s>
       </section>
     </div>
 
