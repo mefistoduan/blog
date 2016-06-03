@@ -10,7 +10,8 @@
 
     <title>Blog by mefistoduan</title>
   </head>
-
+  <style>
+  </style>
   <body>
 
     <header>
@@ -30,6 +31,73 @@
       <section id="main_content">
         <h3>
 <a id="first-line-for-my-blog" class="anchor" href="#first-line-for-my-blog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>first line for my blog</h3>
+     <h5>
+       手机版响应式常用屏幕分辨率
+     </h5>
+  <p>
+    @media only screen and (max-width: 640px) {
+    .banner3{top:32rem;}
+    <br>
+    }
+    @media only screen and (max-width: 480px) {
+    .banner3{top:22rem;}
+    <br>
+
+    }
+    @media only screen and (max-width: 375px) {
+    .banner3{top:18rem;}
+    <br>
+
+    }
+    @media only screen and (max-width: 360px) {
+    .banner3{top:17.5rem;}
+    <br>
+    }
+    @media only screen and (max-width: 320px) {
+    .banner3{top:16rem;}
+    .list_bg li {height: 14em;}
+    <br>
+    }
+    @media only screen and (min-width: 641px) {
+    .banner3{top:32rem;}
+    }
+
+  </p>
+    <h5>
+      js数组堆砌
+    </h5>
+  <p>
+    <br>
+    var as = [];
+    <br>
+    var temp = [];
+    <br>
+    for ( var int = 0; int < 5; int++) {
+    <br>
+    temp.push('{"k":');
+    <br>
+    temp.push(int);
+    <br>
+    temp.push(',"v":');
+    <br>
+    temp.push(int);
+    <br>
+    temp.push('}');
+    <br>
+    as.push(temp.join(""));
+    <br>
+    }
+    <br>
+    //Jquery中的方法，具体参考Jquery API
+    <br>
+    //    $.post(
+    <br>
+    //            "servlet/AjaxServlet?m=putWarningRule",{"aa":as}
+    <br>
+    //    );
+    <br>
+    console.log(as);
+  </p>
       </section>
     </div>
 
