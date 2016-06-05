@@ -2,5 +2,34 @@
   "name": "Blog",
   "tagline": "",
   "body": "###first line for my blog",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
+  "body": "  手机版响应式常用屏幕分辨率",
+  "body": "   @media only screen and (max-width: 640px) {
+  .banner3{top:32rem;}
+<br>
+}
+@media only screen and (max-width: 480px) {
+.banner3{top:22rem;}
+<br>
+
+}
+@media only screen and (max-width: 375px) {
+.banner3{top:18rem;}
+<br>
+
+}
+@media only screen and (max-width: 360px) {
+.banner3{top:17.5rem;}
+<br>
+}
+@media only screen and (max-width: 320px) {
+.banner3{top:16rem;}
+.list_bg li {height: 14em;}
+<br>
+}
+@media only screen and (min-width: 641px) {
+.banner3{top:32rem;}
+}
+"
+
+//  "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
