@@ -30,7 +30,7 @@
     <div class="container">
       <section id="main_content">
         <h3>
-<<<<<<< HEAD
+<<<<<<< HEAD >>>>>>> origin/master
 <a id="first-line-for-my-blog" class="anchor" href="#first-line-for-my-blog" aria-hidden="true">
   <span aria-hidden="true" class="octicon octicon-link"></span></a>first line for my blog</h3>
         <span>2016-06-01</span>
@@ -191,11 +191,26 @@
           <br> 给其父级元素也加上
           <br> *position: relative;
         </p>
+        <h5>
+          jquery获取table里INPUT的值
+        </h5>
+        <p>
+          取得table中的input：
+          $('table input')
+          <br>
+          取得table中第一个input：
+          $('table input:eq(0)')
+          <br>
+          取得table中第一个input的value：
+          $('table input:eq(0)').val()
+          <br>
+          遍历table中的所有input，弹出value：
+          $('table input').each(function(){
+          alert($(this).val());
+          });
+        </p>
 
 
-
-
->>>>>>> origin/master
       </section>
     </div>
 
