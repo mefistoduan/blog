@@ -209,7 +209,22 @@
           alert($(this).val());
           });
         </p>
+      <h5>
+        tabs
+      </h5>
+        <p>
 
+          <br>$(document).ready(function(){
+          <br> $(".menu a").each(function(i){
+          <br>       $(this).click(function(){
+          <br>                $(".menu a").removeClass("on").eq(i).addClass("on");
+          <br>                $(".cnt").hide().eq(i).show();
+          <br>                return false;  //防止a跳转；
+          <br>        })
+          <br>    })
+          <br>});
+
+        </p>
 
       </section>
     </div>
