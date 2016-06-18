@@ -30,7 +30,11 @@
     <div class="container">
       <section id="main_content">
         <h3>
+<<<<<<< HEAD
 <<<<<<< HEAD >>>>>>> origin/master
+=======
+<<<<<<< HEAD>>>>>>> origin/master
+>>>>>>> origin/master
 <a id="first-line-for-my-blog" class="anchor" href="#first-line-for-my-blog" aria-hidden="true">
   <span aria-hidden="true" class="octicon octicon-link"></span></a>first line for my blog</h3>
         <span>2016-06-01</span>
@@ -182,6 +186,31 @@
           <br>background:-moz-linear-gradient(top,#b8c4cb,#f6f6f8);/*火狐*/
           <br>background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#1AA5C4), to(#1AA5C4));
         </p>
+<<<<<<< HEAD
+    <h5>url资源请求过程</h5>
+      <p>
+        <br> 简单的记录一下从浏览器地址栏输入url到页面显示，经过了哪些处理.
+        <br> 1，chrome(以chrome浏览器为例)浏览器搜索自身的DNS缓存，看看缓存里面，比如说有没有比如baidu.com域名或是ip地址，然后检查域名有没有过期(通常是1min)
+        <br>chrome://net-internals/#dns 可以查看你曾经访问过的域名地址。
+        <br>2，搜索操作系统自身的dns缓存(浏览器中没有找到缓存或是缓存失效)
+        <br>3，如果操作系统里面也找不到缓存，就会自动的到系统host文件里面去找域名或是ip。
+        <br> 4，如果host文件查找失败，浏览器就会发起一个dns(域名解析请求)的一个系统调用。
+        <br>4.1 宽带运营商服务器查看自身的缓存。
+        <br> 4.2运营商服务器发起一个迭代dns解析的请求，这时运营商服务器把结果返回操作系统的内核同时缓存起来，操作系统内核把结果返回浏览器，最终浏览器拿到baidu.com对应的ip地址。
+        <br> 5，http三次握手。
+        <br>6，tcp/ip建立起来，浏览器就可以向服务器发送http请求，使用了get方法请求了一个根域里面的一个域名...
+        <br>7,服务器端接收了这个请求，根据路径参数，经过后端的一些处理之后，把处理后的结果的数据返回给浏览器，如果是某个网站的页面，就直接返回页面。
+        <br>8.浏览器拿到完整的html页面代码，在解析和渲染这个页面的时候，里面的js css图片，静态资源，也同样经过上面的步骤。
+        <br>9.浏览器根据拿到的资源，对页面进行渲染，最终把完整的页面呈现给用户。
+      </p>
+      <h5>
+        手机验证简写
+      </h5>
+      <p>
+        if(!/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}/g.test(thisTel)==false){}else{ console.log(123);}
+      </p>
+
+=======
         <h5>
           ie7 下 position 失效
         </h5>
@@ -191,6 +220,7 @@
           <br> 给其父级元素也加上
           <br> *position: relative;
         </p>
+<<<<<<< HEAD
         <h5>
           jquery获取table里INPUT的值
         </h5>
@@ -225,6 +255,9 @@
           <br>});
 
         </p>
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
 
       </section>
     </div>
