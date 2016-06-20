@@ -272,10 +272,40 @@
           <br> background:-moz-linear-gradient(top,#b8c4cb,#f6f6f8);/*火狐*/
           <br> background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#1AA5C4), to(#1AA5C4));
         </p>
-=======
->>>>>>> origin/master
->>>>>>> origin/master
+        \(^o^)/~
+        <h5>
+          input去掉黑点debug
+        </h5>
+        <p>
+          <br>$(function(){
+          <br> $("#PWD").focus(function(){
+          <br> $(this).hide();
+          <br>$("#password").val("").show().css("backgroundColor","#fff").focus();
+          <br>});
+          <br>$("#password").blur(function(){
+          <br>$(this).show().css("backgroundColor","#fff");
+          <br>$("#PWD").hide();
+          <br>});
+          <br>          });
+          <script>
+            $(function(){
+              $("#PWD").focus(function(){
+                $(this).hide();
+                $("#password").val("").show().css("backgroundColor","#fff").focus();
+              });
+              $("#password").blur(function(){
+                $(this).show().css("backgroundColor","#fff");
+                $("#PWD").hide();
+              });
 
+            });
+          </script>
+
+        <div class="input_bg">
+          <input id="PWD" maxlength="20" type="text" title="请输入密码" value="请输入密码 "/>
+          <input type="password" id="password" placeholder="请输入密码" autocomplete="off" style="display: none">
+        </div>
+        </p>
       </section>
     </div>
 
