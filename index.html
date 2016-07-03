@@ -30,7 +30,15 @@
     <div class="container">
       <section id="main_content">
         <h3>
+<<<<<<< HEAD
 <<<<<<< HEAD>>>>>>> origin/master>>>>>>> origin/master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD >>>>>>> origin/master
+=======
+<<<<<<< HEAD>>>>>>> origin/master
+>>>>>>> origin/master
+>>>>>>> origin/master
 <a id="first-line-for-my-blog" class="anchor" href="#first-line-for-my-blog" aria-hidden="true">
   <span aria-hidden="true" class="octicon octicon-link"></span></a>first line for my blog</h3>
         <span>2016-06-01</span>
@@ -216,6 +224,7 @@
           <br> 给其父级元素也加上
           <br> *position: relative;
         </p>
+<<<<<<< HEAD
       <h5>
       鼠标滚动
       </h5>
@@ -240,6 +249,94 @@
         }//W3C
         window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome/Safari
       </p>
+=======
+<<<<<<< HEAD
+        <h5>
+          jquery获取table里INPUT的值
+        </h5>
+        <p>
+          取得table中的input：
+          $('table input')
+          <br>
+          取得table中第一个input：
+          $('table input:eq(0)')
+          <br>
+          取得table中第一个input的value：
+          $('table input:eq(0)').val()
+          <br>
+          遍历table中的所有input，弹出value：
+          $('table input').each(function(){
+          alert($(this).val());
+          });
+        </p>
+      <h5>
+        tabs
+      </h5>
+        <p>
+
+          <br>$(document).ready(function(){
+          <br> $(".menu a").each(function(i){
+          <br>       $(this).click(function(){
+          <br>                $(".menu a").removeClass("on").eq(i).addClass("on");
+          <br>                $(".cnt").hide().eq(i).show();
+          <br>                return false;  //防止a跳转；
+          <br>        })
+          <br>    })
+          <br>});
+
+        </p>
+        <h5>
+          常用jq方法
+        </h5>
+        <p>
+          <br>  unbind();//移除
+          <br> siblings（）;//同胞
+          <br>  closest()//父级遍历
+          <br>  children（）//子级遍历
+        </p>
+        <h5>
+          颜色渐变
+        </h5>
+        <p>
+          FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#1AA5C4,endColorStr=#1AA5C4); /*IE*/
+          <br> background:-moz-linear-gradient(top,#b8c4cb,#f6f6f8);/*火狐*/
+          <br> background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#1AA5C4), to(#1AA5C4));
+        </p>
+        \(^o^)/~
+        <h5>
+          input去掉黑点debug
+        </h5>
+        <p>
+          <br>$(function(){
+          <br> $("#PWD").focus(function(){
+          <br> $(this).hide();
+          <br>$("#password").val("").show().css("backgroundColor","#fff").focus();
+          <br>});
+          <br>$("#password").blur(function(){
+          <br>$(this).show().css("backgroundColor","#fff");
+          <br>$("#PWD").hide();
+          <br>});
+          <br>          });
+          <script>
+            $(function(){
+              $("#PWD").focus(function(){
+                $(this).hide();
+                $("#password").val("").show().css("backgroundColor","#fff").focus();
+              });
+              $("#password").blur(function(){
+                $(this).show().css("backgroundColor","#fff");
+                $("#PWD").hide();
+              });
+
+            });
+          </script>
+
+        <div class="input_bg">
+          <input id="PWD" maxlength="20" type="text" title="请输入密码" value="请输入密码 "/>
+          <input type="password" id="password" placeholder="请输入密码" autocomplete="off" style="display: none">
+        </div>
+        </p>
+>>>>>>> origin/master
       </section>
     </div>
 
