@@ -216,8 +216,30 @@
           <br> 给其父级元素也加上
           <br> *position: relative;
         </p>
+      <h5>
+      鼠标滚动
+      </h5>
+      <p>
+        var oTxt=document.getElementById("txt");
+        var scrollFunc=function(e){
+        var direct=0;
+        e=e || window.event;
 
-
+        var t1=document.getElementById("wheelDelta");
+        var t2=document.getElementById("detail");
+        if(e.wheelDelta){//IE/Opera/Chrome
+        t1.value=e.wheelDelta;
+        }else if(e.detail){//Firefox
+        t2.value=e.detail;
+        }
+        ScrollText(direct);
+        }
+        /*注册事件*/
+        if(document.addEventListener){
+        document.addEventListener('DOMMouseScroll',scrollFunc,false);
+        }//W3C
+        window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome/Safari
+      </p>
       </section>
     </div>
 
